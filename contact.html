@@ -42,40 +42,56 @@
 	contactus@goodwill.org</p>
 	<br>
 <h3>New York City Locations</h3>
-<ul>
-	<b>Brooklyn Livingston Store</b><br>
+<p>
+	<b class="acc">Brooklyn Livingston Store</b><br>
+	<span>
 	258 Livingston Street<br>
 	Brooklyn, NY 11201<br>
-	718-923-9037<br>
-	<br>
-	<b>Greenwich Village 8th</b><br>
+	718-923-9037</span>
+</p>
+<p>
+	<b class="acc">Greenwich Village 8th</b><br>
+	<span>
 	Street Store<br>
 	44 West 8th Street<br>
 	New York, NY 10011<br>
-	212-477-7024<br>
+	212-477-7024
+	</span>
 	<br>
-	<b>Manhattan 14th Street</b><br>
+</p>
+<p>
+	<b class="acc">Manhattan 14th Street</b><br>
+	<span>
 	7 West 14th Street<br>
 	New York,NY 10011<br>
-	212 206-1619<br>
+	212 206-1619
+	</span>
 	<br>
-	<b>Manhattan 61st Street Store</b><br>
+	</p>
+<p>
+	<b class="acc">Manhattan 61st Street Store</b><br>
+	<span>
 	1114 First Avenue<br>
 	New York,NY 10065<br>
-	212-355-5206<br>
+	212-355-5206
+	</span>
 	<br>
-<b>Harlem Fifth Avenue Store</b><br>
+</p>
+<p>
+	<b class="acc">Harlem Fifth Avenue Store</b><br>
+	<span>
 	2196 Fifth Avenue<br>
 	New York,NY 10037<br>
-	212-862-0020<br>
+	212-862-0020
+	</span>
 		
 	</ul>
 </div>
 
-<script src="contact.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-</body>
+
+
+
+
 <br>
 <footer style="text-align:center,">
 <div class="panel panel-default">
@@ -96,8 +112,17 @@
 				<p>FOLLOW US ON TWITTER</p>
 			</a>
 		</li>
+		</ul>
 </div>
 
 </footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(".acc").click(function(){
+	$(this).next().next().toggle();
+});
 
+</script>
+</body>
 </html>
